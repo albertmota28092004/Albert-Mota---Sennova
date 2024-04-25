@@ -29,4 +29,7 @@ class Conexion():
         except Exception as ex:
             print("Ya se creó el usuario admin", ex)
 
+    def conectar(self):
+        return self.con
+
 con = Conexion()
