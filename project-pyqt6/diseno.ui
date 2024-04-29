@@ -76,7 +76,7 @@ QPushButton:hover {
             </property>
             <property name="icon">
              <iconset>
-              <normaloff>menu.png</normaloff>menu.png</iconset>
+              <normaloff>images/menu.png</normaloff>images/menu.png</iconset>
             </property>
             <property name="iconSize">
              <size>
@@ -112,7 +112,7 @@ QPushButton:hover {
             </property>
             <property name="icon">
              <iconset>
-              <normaloff>minimizar.png</normaloff>minimizar.png</iconset>
+              <normaloff>images/minimizar.png</normaloff>images/minimizar.png</iconset>
             </property>
             <property name="iconSize">
              <size>
@@ -135,7 +135,7 @@ QPushButton:hover {
             </property>
             <property name="icon">
              <iconset>
-              <normaloff>restaurar.png</normaloff>restaurar.png</iconset>
+              <normaloff>images/restaurar.png</normaloff>images/restaurar.png</iconset>
             </property>
             <property name="iconSize">
              <size>
@@ -158,7 +158,7 @@ QPushButton:hover {
             </property>
             <property name="icon">
              <iconset>
-              <normaloff>maximizar.png</normaloff>maximizar.png</iconset>
+              <normaloff>images/maximizar.png</normaloff>images/maximizar.png</iconset>
             </property>
             <property name="iconSize">
              <size>
@@ -181,7 +181,7 @@ QPushButton:hover {
             </property>
             <property name="icon">
              <iconset>
-              <normaloff>cerrar.png</normaloff>cerrar.png</iconset>
+              <normaloff>images/cerrar.png</normaloff>images/cerrar.png</iconset>
             </property>
             <property name="iconSize">
              <size>
@@ -258,7 +258,7 @@ QPushButton:hover {
                </property>
                <property name="icon">
                 <iconset>
-                 <normaloff>bbdd.png</normaloff>bbdd.png</iconset>
+                 <normaloff>images/bbdd.png</normaloff>images/bbdd.png</iconset>
                </property>
                <property name="iconSize">
                 <size>
@@ -281,7 +281,7 @@ QPushButton:hover {
                </property>
                <property name="icon">
                 <iconset>
-                 <normaloff>persona.png</normaloff>persona.png</iconset>
+                 <normaloff>images/persona.png</normaloff>images/persona.png</iconset>
                </property>
                <property name="iconSize">
                 <size>
@@ -304,7 +304,7 @@ QPushButton:hover {
                </property>
                <property name="icon">
                 <iconset>
-                 <normaloff>editar.png</normaloff>editar.png</iconset>
+                 <normaloff>images/editar.png</normaloff>images/editar.png</iconset>
                </property>
                <property name="iconSize">
                 <size>
@@ -327,7 +327,7 @@ QPushButton:hover {
                </property>
                <property name="icon">
                 <iconset>
-                 <normaloff>eliminar.png</normaloff>eliminar.png</iconset>
+                 <normaloff>images/eliminar.png</normaloff>images/eliminar.png</iconset>
                </property>
                <property name="iconSize">
                 <size>
@@ -350,7 +350,7 @@ QPushButton:hover {
                </property>
                <property name="icon">
                 <iconset>
-                 <normaloff>ajustes.png</normaloff>ajustes.png</iconset>
+                 <normaloff>images/ajustes.png</normaloff>images/ajustes.png</iconset>
                </property>
                <property name="iconSize">
                 <size>
