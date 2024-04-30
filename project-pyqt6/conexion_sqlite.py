@@ -26,14 +26,14 @@ class Comunicacion():
         cursor.close()
         return nombreX
     
-    def elimina_producto(self, nombre):
+    def elimina_productos(self, nombre):
         cursor = self.conexion.cursor()
         bd = '''DELETE FROM tabla_datos WHERE NOMBRE = {}'''.format(nombre)
         cursor.execute(bd)
         self.conexion.commit()
         cursor.close()
 
-    def actualiza_producto(self, Id, codigo, nombre, modelo, precio, cantidad):
+    def actualiza_productos(self, Id, codigo, nombre, modelo, precio, cantidad):
         cursor = self.conexion.cursor()
         bd = '''UPDATE tabla_datos SET CODIGO = '{}', NOMBRE = '{}', MODELO = '{}', PRECIO = '{}', CANTIDAD = '{}' WHERE ID = '{}' '''.format(codigo, nombre, modelo, precio, cantidad, Id)
         cursor.execute(bd)
