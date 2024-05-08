@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>787</width>
-    <height>579</height>
+    <height>578</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -58,7 +58,7 @@ QPushButton {
 }
 
 QPushButton:hover {
-	background-color: rgb(61,61,61);
+	background-color:rgb(50, 158, 11);
 	border-radius: 20px;
 }</string>
          </property>
@@ -82,7 +82,7 @@ QPushButton:hover {
             </property>
             <property name="icon">
              <iconset>
-              <normaloff>images/menu.png</normaloff>images/menu.png</iconset>
+              <normaloff>../../../Downloads/png-clipart-menu-icon-icons-logos-emojis-menu-icons-removebg-preview.png</normaloff>../../../Downloads/png-clipart-menu-icon-icons-logos-emojis-menu-icons-removebg-preview.png</iconset>
             </property>
             <property name="iconSize">
              <size>
@@ -203,7 +203,7 @@ QPushButton:hover {
        <item>
         <widget class="QFrame" name="frame_contenido">
          <property name="styleSheet">
-          <string notr="true">background-color: white;</string>
+          <string notr="true">background-color: #42cd10;</string>
          </property>
          <property name="frameShape">
           <enum>QFrame::StyledPanel</enum>
@@ -247,11 +247,13 @@ QPushButton:hover {
 }
 
 QPushButton {
-	background-color: rgb(61, 61, 61);
-	border-top-left-radius: 20px;
-	border-bottom-left-radius: 20px;
+	background-color:transparent;
+	border-radius: 20px;
+	border: 5px solid white;
 	color: rgb(255, 255, 255);
 	font: 77 10pt &quot;Arial Black&quot;;
+	text-align: left;
+	padding-left: 20px;
 }
 
 QPushButton:hover {
@@ -260,7 +262,13 @@ QPushButton:hover {
 	border-bottom-left-radius: 20px;
 	color: #000000;
 	font: 77 10pt &quot;Arial Black&quot;;
-}</string>
+}
+
+QComboBox {
+    padding-left: 50px; /* Espacio a la izquierda para la flecha */
+}
+
+</string>
             </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
@@ -278,11 +286,7 @@ QPushButton:hover {
                 </size>
                </property>
                <property name="text">
-                <string>BBDD</string>
-               </property>
-               <property name="icon">
-                <iconset>
-                 <normaloff>images/bbdd.png</normaloff>images/bbdd.png</iconset>
+                <string>Home</string>
                </property>
                <property name="iconSize">
                 <size>
@@ -301,11 +305,7 @@ QPushButton:hover {
                 </size>
                </property>
                <property name="text">
-                <string>REGISTRAR</string>
-               </property>
-               <property name="icon">
-                <iconset>
-                 <normaloff>images/persona.png</normaloff>images/persona.png</iconset>
+                <string>Dashboard</string>
                </property>
                <property name="iconSize">
                 <size>
@@ -324,11 +324,7 @@ QPushButton:hover {
                 </size>
                </property>
                <property name="text">
-                <string>ACTUALIZAR</string>
-               </property>
-               <property name="icon">
-                <iconset>
-                 <normaloff>images/editar.png</normaloff>images/editar.png</iconset>
+                <string>Orders</string>
                </property>
                <property name="iconSize">
                 <size>
@@ -347,11 +343,7 @@ QPushButton:hover {
                 </size>
                </property>
                <property name="text">
-                <string>ELIMINAR</string>
-               </property>
-               <property name="icon">
-                <iconset>
-                 <normaloff>images/eliminar.png</normaloff>images/eliminar.png</iconset>
+                <string>Products</string>
                </property>
                <property name="iconSize">
                 <size>
@@ -370,11 +362,7 @@ QPushButton:hover {
                 </size>
                </property>
                <property name="text">
-                <string>AJUSTES</string>
-               </property>
-               <property name="icon">
-                <iconset>
-                 <normaloff>images/ajustes.png</normaloff>images/ajustes.png</iconset>
+                <string>Customers</string>
                </property>
                <property name="iconSize">
                 <size>
@@ -383,6 +371,155 @@ QPushButton:hover {
                 </size>
                </property>
               </widget>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_15">
+               <item>
+                <layout class="QVBoxLayout" name="verticalLayout_13">
+                 <item>
+                  <spacer name="verticalSpacer_5">
+                   <property name="orientation">
+                    <enum>Qt::Vertical</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>20</width>
+                     <height>40</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_16">
+                   <property name="spacing">
+                    <number>10</number>
+                   </property>
+                   <item>
+                    <widget class="QLabel" name="label_20">
+                     <property name="maximumSize">
+                      <size>
+                       <width>50</width>
+                       <height>50</height>
+                      </size>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Arial Black</family>
+                      </font>
+                     </property>
+                     <property name="autoFillBackground">
+                      <bool>false</bool>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">border-radius: 2px;</string>
+                     </property>
+                     <property name="text">
+                      <string/>
+                     </property>
+                     <property name="pixmap">
+                      <pixmap>images/usuario.png</pixmap>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <layout class="QHBoxLayout" name="horizontalLayout_17">
+                     <property name="spacing">
+                      <number>0</number>
+                     </property>
+                     <item>
+                      <widget class="QLabel" name="label_21">
+                       <property name="font">
+                        <font>
+                         <family>Arial Black</family>
+                        </font>
+                       </property>
+                       <property name="layoutDirection">
+                        <enum>Qt::LeftToRight</enum>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">color: #FFFFFF;</string>
+                       </property>
+                       <property name="text">
+                        <string>Admin</string>
+                       </property>
+                       <property name="alignment">
+                        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QComboBox" name="comboBox_4">
+                       <property name="font">
+                        <font>
+                         <kerning>true</kerning>
+                        </font>
+                       </property>
+                       <property name="autoFillBackground">
+                        <bool>false</bool>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">background-color: transparent;
+border: 0 solid transparent;
+width: 0%;  </string>
+                       </property>
+                       <property name="currentIndex">
+                        <number>0</number>
+                       </property>
+                       <property name="maxVisibleItems">
+                        <number>10</number>
+                       </property>
+                       <property name="insertPolicy">
+                        <enum>QComboBox::InsertAtBottom</enum>
+                       </property>
+                       <property name="sizeAdjustPolicy">
+                        <enum>QComboBox::AdjustToContentsOnFirstShow</enum>
+                       </property>
+                       <property name="iconSize">
+                        <size>
+                         <width>16</width>
+                         <height>16</height>
+                        </size>
+                       </property>
+                       <property name="frame">
+                        <bool>true</bool>
+                       </property>
+                       <item>
+                        <property name="text">
+                         <string>Edit profile</string>
+                        </property>
+                       </item>
+                       <item>
+                        <property name="text">
+                         <string>Settings</string>
+                        </property>
+                       </item>
+                       <item>
+                        <property name="text">
+                         <string>Sign out</string>
+                        </property>
+                       </item>
+                      </widget>
+                     </item>
+                    </layout>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <spacer name="horizontalSpacer_8">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>40</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+              </layout>
              </item>
             </layout>
            </widget>

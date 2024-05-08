@@ -4,8 +4,11 @@ body {
     padding: 0;
 }
 
-.col-10 {
-    z-index: 1;
+.barra_navegacion {
+    background-color: #42cd10 !important;
+    position: fixed !important; /* Fijar la barra de navegación */
+    width: 100%; /* Ocupar todo el ancho */
+    z-index: 1000;
 }
 
 #boton_offcanvas {
@@ -15,16 +18,40 @@ body {
 
 #contenedor_sidebar {
     height: 100vh;
+    width: 250;
+    visibility: visible;
+    transition: width 0.3s ease-in-out, visibility 0.2s ease; 
     max-width: 290px;
     position: fixed;
-    display: none;
-    transition: display 0.3s ease-in-out;
     background-color: #42cd10 !important;
+    z-index: 1000;
+    margin-top: 50px;
+}
+
+.sidebar_botones {
+    border: 5px solid white;
+    border-radius: 30px;
+    margin-bottom: 30px;
+    transition: width 0.01s ease-in-out; /* Agrega la transición a los botones */
+}
+
+.sidebar_botones:hover {
+    background-color: #e6e6e6;
+    color: #000000 !important;
+    width: 100%; /* Ajusta el ancho en hover */
+}
+
+.sidebar_botones a:hover {
+    color: #000000 !important;
 
 }
 
-.barra_navegacion {
-    background-color: #42cd10 !important;
+.sidebar_contraida #contenedor_sidebar {
+    width: 0; /* Ancho cero cuando está contraída */
+}
+
+.sidebar_abierta #contenedor_sidebar {
+    width: 250px; /* Ancho deseado cuando está abierta */
 }
 
 #menu_sidebar {
@@ -36,7 +63,7 @@ body {
     /* Color del scroll */
 }
 
-.texto {
+.usuario_configuracion {
     bottom: 5px;
     position: fixed;
     text-align: center;
@@ -45,40 +72,50 @@ body {
 .hr-grueso {
     background-color: #FFFFFF !important;
     border: none;
-    width: 230px !important;
+    width: auto !important;
     height: 7px !important;
 }
 
-.sidebar_botones {
-    border: 5px solid white;
-    border-radius: 30px;
-    margin-bottom: 30px;
+
+/* Menú principal */
+#contenedor_principal {
+    transition: margin-left 0.3s ease-in-out;
+    background-color: #000000;
+    z-index: 1;
+    height: 100vh;
+    margin-top: 3rem;
+    justify-content: center !important;
+    max-width: 100vw;
+    overflow-x: scroll !important;
+    margin-left: 290px;
 }
+/* Gráficas */
 
-.sidebar_botones:hover {
-    background-color: #e6e6e6;
-    color: #000000 !important;
-
-}
-
-.sidebar_botones a:hover {
-    color: #000000 !important;
+.contenedor_diagramas {
+    display: flex;
+    justify-content: center !important;
+    gap: 100px;
 
 }
 
 .board {
-    margin: auto;
+    margin: 10px;
     width: 40%;
     height: 300px;
-    background-color: #e2e2e2;
+    background-color: #42cd10;
     padding: 10px;
+    padding-bottom: 30px;
     box-sizing: border-box;
     overflow: hidden;
+    border-radius: 30px;
 }
 
 .titulo_grafica {
+    margin: 10px;
+    color: #FFFFFF;
     width: 100%;
     height: 10%;
+    text-align: center;
 }
 
 .titulo_grafica>h3 {
@@ -91,11 +128,11 @@ body {
 .sub_board {
     width: 100%;
     height: 90%;
-    padding: 10px;
-    margin-top: 0px;
+    padding-bottom: 40px;
     background-color: #f4f4f4;
     overflow: hidden;
     box-sizing: border-box;
+    border-radius: 20px;
 }
 
 .sep_board {
@@ -247,14 +284,4 @@ footer {
     text-align: center;
     font-size: 12px;
     font-family: sans-serif;
-}
-
-.contenedor_diagramas{
-    display: flex;
-    gap: 40px;
-    padding: 30px;
-    align-items: center !important;
-    justify-content: center !important;
-    text-align: center;
-    margin: 200px;
 }

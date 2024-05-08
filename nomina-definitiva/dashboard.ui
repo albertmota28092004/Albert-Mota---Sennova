@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>787</width>
-    <height>579</height>
+    <height>578</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -58,7 +58,7 @@ QPushButton {
 }
 
 QPushButton:hover {
-	background-color: rgb(61,61,61);
+	background-color:rgb(50, 158, 11);
 	border-radius: 20px;
 }</string>
          </property>
@@ -82,7 +82,7 @@ QPushButton:hover {
             </property>
             <property name="icon">
              <iconset>
-              <normaloff>images/menu.png</normaloff>images/menu.png</iconset>
+              <normaloff>images/png-clipart-menu-icon-icons-logos-emojis-menu-icons-removebg-preview.png</normaloff>images/png-clipart-menu-icon-icons-logos-emojis-menu-icons-removebg-preview.png</iconset>
             </property>
             <property name="iconSize">
              <size>
@@ -118,7 +118,7 @@ QPushButton:hover {
             </property>
             <property name="icon">
              <iconset>
-              <normaloff>images/minimizar.png</normaloff>images/minimizar.png</iconset>
+              <normaloff>images/minus-round_icon-icons.com_50094.png</normaloff>images/minus-round_icon-icons.com_50094.png</iconset>
             </property>
             <property name="iconSize">
              <size>
@@ -141,7 +141,7 @@ QPushButton:hover {
             </property>
             <property name="icon">
              <iconset>
-              <normaloff>images/restaurar.png</normaloff>images/restaurar.png</iconset>
+              <normaloff>images/44707.png</normaloff>images/44707.png</iconset>
             </property>
             <property name="iconSize">
              <size>
@@ -164,7 +164,7 @@ QPushButton:hover {
             </property>
             <property name="icon">
              <iconset>
-              <normaloff>images/maximizar.png</normaloff>images/maximizar.png</iconset>
+              <normaloff>images/44755.png</normaloff>images/44755.png</iconset>
             </property>
             <property name="iconSize">
              <size>
@@ -187,7 +187,7 @@ QPushButton:hover {
             </property>
             <property name="icon">
              <iconset>
-              <normaloff>images/cerrar.png</normaloff>images/cerrar.png</iconset>
+              <normaloff>images/7560626.png</normaloff>images/7560626.png</iconset>
             </property>
             <property name="iconSize">
              <size>
@@ -203,7 +203,7 @@ QPushButton:hover {
        <item>
         <widget class="QFrame" name="frame_contenido">
          <property name="styleSheet">
-          <string notr="true">background-color: white;</string>
+          <string notr="true">background-color: #42cd10;</string>
          </property>
          <property name="frameShape">
           <enum>QFrame::StyledPanel</enum>
@@ -247,11 +247,13 @@ QPushButton:hover {
 }
 
 QPushButton {
-	background-color: rgb(61, 61, 61);
-	border-top-left-radius: 20px;
-	border-bottom-left-radius: 20px;
+	background-color:transparent;
+	border-radius: 20px;
+	border: 5px solid white;
 	color: rgb(255, 255, 255);
 	font: 77 10pt &quot;Arial Black&quot;;
+	text-align: left;
+	padding-left: 20px;
 }
 
 QPushButton:hover {
@@ -260,7 +262,16 @@ QPushButton:hover {
 	border-bottom-left-radius: 20px;
 	color: #000000;
 	font: 77 10pt &quot;Arial Black&quot;;
-}</string>
+}
+
+QComboBox {
+    padding-left: 50px; /* Espacio a la izquierda para la flecha */
+	border: 0 solid transparent;
+}
+
+
+
+</string>
             </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
@@ -270,7 +281,7 @@ QPushButton:hover {
             </property>
             <layout class="QVBoxLayout" name="verticalLayout_2">
              <item>
-              <widget class="QPushButton" name="bt_datos">
+              <widget class="QPushButton" name="bt_inicio">
                <property name="minimumSize">
                 <size>
                  <width>0</width>
@@ -278,11 +289,7 @@ QPushButton:hover {
                 </size>
                </property>
                <property name="text">
-                <string>BBDD</string>
-               </property>
-               <property name="icon">
-                <iconset>
-                 <normaloff>images/bbdd.png</normaloff>images/bbdd.png</iconset>
+                <string>Home</string>
                </property>
                <property name="iconSize">
                 <size>
@@ -301,11 +308,7 @@ QPushButton:hover {
                 </size>
                </property>
                <property name="text">
-                <string>REGISTRAR</string>
-               </property>
-               <property name="icon">
-                <iconset>
-                 <normaloff>images/persona.png</normaloff>images/persona.png</iconset>
+                <string>Dashboard</string>
                </property>
                <property name="iconSize">
                 <size>
@@ -324,11 +327,7 @@ QPushButton:hover {
                 </size>
                </property>
                <property name="text">
-                <string>ACTUALIZAR</string>
-               </property>
-               <property name="icon">
-                <iconset>
-                 <normaloff>images/editar.png</normaloff>images/editar.png</iconset>
+                <string>Orders</string>
                </property>
                <property name="iconSize">
                 <size>
@@ -347,11 +346,7 @@ QPushButton:hover {
                 </size>
                </property>
                <property name="text">
-                <string>ELIMINAR</string>
-               </property>
-               <property name="icon">
-                <iconset>
-                 <normaloff>images/eliminar.png</normaloff>images/eliminar.png</iconset>
+                <string>Products</string>
                </property>
                <property name="iconSize">
                 <size>
@@ -370,11 +365,7 @@ QPushButton:hover {
                 </size>
                </property>
                <property name="text">
-                <string>AJUSTES</string>
-               </property>
-               <property name="icon">
-                <iconset>
-                 <normaloff>images/ajustes.png</normaloff>images/ajustes.png</iconset>
+                <string>Customers</string>
                </property>
                <property name="iconSize">
                 <size>
@@ -383,6 +374,74 @@ QPushButton:hover {
                 </size>
                </property>
               </widget>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_15">
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_13">
+                 <item>
+                  <layout class="QVBoxLayout" name="verticalLayout_13">
+                   <item>
+                    <spacer name="verticalSpacer_6">
+                     <property name="orientation">
+                      <enum>Qt::Vertical</enum>
+                     </property>
+                     <property name="sizeHint" stdset="0">
+                      <size>
+                       <width>20</width>
+                       <height>40</height>
+                      </size>
+                     </property>
+                    </spacer>
+                   </item>
+                   <item>
+                    <layout class="QHBoxLayout" name="horizontalLayout_14">
+                     <item>
+                      <widget class="QLabel" name="label_8">
+                       <property name="text">
+                        <string/>
+                       </property>
+                       <property name="pixmap">
+                        <pixmap>images/usuario.png</pixmap>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLabel" name="label_15">
+                       <property name="text">
+                        <string>Admin</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QComboBox" name="comboBox">
+                       <property name="styleSheet">
+                        <string notr="true">background-color: transparent;
+border: 0 solid transparent;
+padding-right: -95px;</string>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <spacer name="horizontalSpacer_9">
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>40</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                </layout>
+               </item>
+              </layout>
              </item>
             </layout>
            </widget>
@@ -397,7 +456,6 @@ QPushButton:hover {
 QLabel {
     font: 87 12pt &quot;Arial Black&quot;;
     background-color: #000000ff;
-    color: #E04F60; 
     border: 0px solid #14C8DC;
 }
 
@@ -411,7 +469,6 @@ QLineEdit{
 QPushButton {
     background-color: rgb(61, 61, 61);
     border-radius: 15px;
-    color: rgb(255, 255, 255);
     font: 77 10pt &quot;Arial Black&quot;;
 }
 
@@ -431,14 +488,12 @@ QTableWidget {
 }
 
 QHeaderView::section {
-    background-color: #E04F60;
     border: 1px solid rgb(0, 0, 0);
     font-size: 12pt;
 }
 
 QTableWidget QTableCornerButton::section {
     background-color: rgb(0, 0, 0);
-    border: 1px solid #E04F60;
 }
 
 </string>
@@ -467,7 +522,7 @@ QTableWidget QTableCornerButton::section {
                <property name="styleSheet">
                 <string notr="true">background-color: white; </string>
                </property>
-               <widget class="QWidget" name="page_datos">
+               <widget class="QWidget" name="page_inicio">
                 <layout class="QVBoxLayout" name="verticalLayout_4">
                  <item>
                   <widget class="QLabel" name="label">
