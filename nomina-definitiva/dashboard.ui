@@ -265,7 +265,6 @@ QPushButton:hover {
 }
 
 QComboBox {
-    padding-left: 50px; /* Espacio a la izquierda para la flecha */
 	border: 0 solid transparent;
 }
 
@@ -289,7 +288,7 @@ QComboBox {
                 </size>
                </property>
                <property name="text">
-                <string>Home</string>
+                <string>Inicio</string>
                </property>
                <property name="iconSize">
                 <size>
@@ -417,27 +416,28 @@ QComboBox {
                       <widget class="QComboBox" name="comboBox">
                        <property name="styleSheet">
                         <string notr="true">background-color: transparent;
-border: 0 solid transparent;
-padding-right: -95px;</string>
+border: 0 solid transparent;</string>
                        </property>
+                       <item>
+                        <property name="text">
+                         <string>Edit profile</string>
+                        </property>
+                       </item>
+                       <item>
+                        <property name="text">
+                         <string>Settings</string>
+                        </property>
+                       </item>
+                       <item>
+                        <property name="text">
+                         <string>Sign out</string>
+                        </property>
+                       </item>
                       </widget>
                      </item>
                     </layout>
                    </item>
                   </layout>
-                 </item>
-                 <item>
-                  <spacer name="horizontalSpacer_9">
-                   <property name="orientation">
-                    <enum>Qt::Horizontal</enum>
-                   </property>
-                   <property name="sizeHint" stdset="0">
-                    <size>
-                     <width>40</width>
-                     <height>20</height>
-                    </size>
-                   </property>
-                  </spacer>
                  </item>
                 </layout>
                </item>

@@ -45,7 +45,7 @@ class VentanaPrincipal(QMainWindow):
         self.frame_superior.mouseMoveEvent = self.mover_ventana
 
         # Conexión botones
-        self.bt_datos.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.page_datos))
+        self.bt_inicio.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.page_inicio))
         self.bt_registrar.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.page_registrar))
         self.bt_actualizar.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.page_actualizar))
         self.bt_eliminar.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.page_eliminar))
