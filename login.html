@@ -14,13 +14,27 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
-    <title>Modelo</title>
+    <title>Nómina SENA - Iniciar Sesión</title>
 </head>
 
 <body>
     <div class="contenedor_login">
         <img src="logo_sena.png" alt="" class="logo_sena">
         <h3>Iniciar sesión</h3>
+        <form class="form_login">
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Correo electrónico: </label>
+                <input type="email" class="form-control inputs_login" id="correo" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Contraseña: </label>
+                <input type="password" class="form-control inputs_login" id="contrasena">
+            </div>
+            <div class="mb-3 form-check">
+                <a href="#" class="olvidaste_contrasena">¿Olvidaste tu contraseña?</a>
+            </div>
+            <a href="index.html" type="submit" class="btn ingresar">Ingresar</a>
+        </form>
     </div>
 </body>
 
