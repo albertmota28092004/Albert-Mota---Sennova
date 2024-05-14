@@ -78,7 +78,7 @@ label {
 /*----------------MENU PRINCIPAL----------------*/
 
 .barra_navegacion {
-    background-color: #42cd10 !important;
+    background-color: #94bf84 !important;
     position: fixed !important; /* Fijar la barra de navegación */
     width: 100%; /* Ocupar todo el ancho */
     z-index: 1000;

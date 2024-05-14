@@ -1,8 +1,9 @@
-(function($) {
-  "use strict"; // Start of use strict
+$(document).ready(function() {
+  "use strict";
 
   // Toggle the side navigation
-  $("#sidebarToggle, #sidebarToggleTop").on('click', function(e) {
+  $(document).on('click', '#sidebarToggle', function(e) {
+    e.preventDefault();
     $("body").toggleClass("sidebar-toggled");
     $(".sidebar").toggleClass("toggled");
     if ($(".sidebar").hasClass("toggled")) {
@@ -52,5 +53,52 @@
     }, 1000, 'easeInOutExpo');
     e.preventDefault();
   });
+});
 
-})(jQuery); // End of use strict
+
+// Cargar la barra lateral
+fetch('wrappers/sidebar.html')
+.then(response => response.text())
+.then(html => {
+    document.getElementById('sidebar-wrapper').innerHTML = html;
+});
+
+// Cargar la barra superior
+fetch('wrappers/topbar.html')
+.then(response => response.text())
+.then(html => {
+    document.getElementById('topbar-wrapper').innerHTML = html;
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+   // Obtener el identificador único de la página actual
+   var currentPageId = document.body.id;
+
+   // Obtener todos los elementos li de la barra lateral
+   var sidebarItems = document.querySelectorAll("#accordionSidebar li.nav-item");
+
+   // Iterar sobre los elementos li y agregar la clase 'active' al elemento correspondiente
+   sidebarItems.forEach(function(item) {
+       var link = item.querySelector("a.nav-link");
+       var href = link.getAttribute("href");
+
+       // Comparar el href del enlace con el identificador único de la página actual
+       if (href === currentPageId || (currentPageId.startsWith(href) && href !== "#")) {
+           item.classList.add("active");
+           // Expandir el menú si es un elemento de menú desplegable
+           if (item.classList.contains("collapse")) {
+               item.querySelector(".collapse").classList.add("show");
+           }
+       }
+   });
+});
+
+document.querySelectorAll('.custom-tooltip').forEach(item => {
+  item.addEventListener('focus', function() {
+      this.classList.add('active');
+  });
+  item.addEventListener('blur', function() {
+      this.classList.remove('active');
+  });
+});
+
