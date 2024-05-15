@@ -11297,3 +11297,23 @@ footer.sticky-footer .copyright {
 body.sidebar-toggled footer.sticky-footer {
   width: 100%;
 }
+
+/*  Nómina  */
+
+.nomina_container {
+  margin: 20px 20px 100% 20px;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  gap: 20px;
+  text-align: center;
+  height: 350px !important;
+  color: white;
+}
+
+.nomina_item {
+  padding: 20px;
+  width: 180px;
+  height: 200px;
+  border-radius: 30px;
+
+}

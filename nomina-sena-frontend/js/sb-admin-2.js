@@ -57,14 +57,15 @@ $(document).ready(function() {
 
 
 // Cargar la barra lateral
-fetch('wrappers/sidebar.html')
+
+fetch('../wrappers/sidebar.html')
 .then(response => response.text())
 .then(html => {
     document.getElementById('sidebar-wrapper').innerHTML = html;
 });
 
 // Cargar la barra superior
-fetch('wrappers/topbar.html')
+fetch('../wrappers/topbar.html')
 .then(response => response.text())
 .then(html => {
     document.getElementById('topbar-wrapper').innerHTML = html;
