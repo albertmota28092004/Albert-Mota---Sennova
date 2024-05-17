@@ -11303,8 +11303,8 @@ body.sidebar-toggled footer.sticky-footer {
 .nomina_container {
   margin: 20px 20px 100% 20px;
   display: grid;
-  grid-template-columns: auto auto auto auto auto;
-  gap: 20px;
+  grid-template-columns: auto auto auto auto auto auto;
+  gap: 25px;
   text-align: center;
   height: 350px !important;
   color: white;
@@ -11316,4 +11316,71 @@ body.sidebar-toggled footer.sticky-footer {
   height: 200px;
   border-radius: 30px;
 
+}
+
+/*  LOGIN  */
+
+.contenedor_login{
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+}
+
+.logo_sena {
+  margin-top: 50px;
+}
+
+.titulo_login {
+  color: white !important;
+  margin-top: 10px !important;
+  margin-bottom: 50px !important;
+  font-size: 50px !important;
+}
+
+.form_login {
+  margin-right: 20px;
+}
+
+.label_login {
+  color: white;
+  font-size: 20px;
+}
+
+.contenedor_input_login {
+  display: flex;
+  justify-content: center;
+}
+
+.inputs_login {
+  width: 20em !important;
+}
+
+#correo {
+  margin-left: 17px;
+}
+
+#contrasena {
+  margin-left: 80px;
+}
+
+.olvidaste_contrasena {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.olvidaste_contrasena:hover {
+  color:#e6e6e6
+}
+
+.ingresar {
+  color: #FFFFFF !important;
+  background-color: transparent;
+  border: 5px solid #FFFFFF !important;
+  border-radius: 30px !important;
+  margin-top: 80px;
+}
+
+.ingresar:hover {
+  color:#e6e6e6 !important;
+  background-color: #01050425 !important;
 }

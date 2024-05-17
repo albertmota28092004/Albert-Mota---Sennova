@@ -20,7 +20,7 @@ body {
     margin-top: 100px;
 }
 
-h3 {
+.titulo_login {
     color: white !important;
     margin-top: 50px !important;
     margin-bottom: 50px !important;
@@ -31,12 +31,12 @@ h3 {
     margin-right: 20px;
 }
 
-label {
+.label_login {
     color: white;
     font-size: 20px;
 }
 
-.mb-3 {
+.contenedor_input_login {
     display: flex;
     justify-content: center;
 }
